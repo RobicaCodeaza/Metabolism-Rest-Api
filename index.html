@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container-app">
+        <header class="header">
+          <div class="header__persons">
+            <button class="btn btn--persons">See all Persons</button>
+          </div>
+          <div class="header__appointment">
+            <img src="https://img.icons8.com/wired/64/000000/health-book.png" />
+            <h1 class="heading-primary">Bmr Calculator and Appointment</h1>
+          </div>
+        </header>
+        <div class="container-details">
+          <div class="side side--left">
+            <div class="side--left-container">
+              <div class="side--left-container-persons"></div>
+            </div>
+            <button class="btn btn--persons btn--deleteAll">Delete all</button>
+          </div>
+          <div class="side side--right">
+            <form name="form-details " class="form-details form-details--right">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  class="full-name"
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="full-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="age">Age</label>
+                <input
+                  class="age"
+                  id="age"
+                  type="number"
+                  placeholder="21"
+                  name="age"
+                  required
+                />
+              </div>
+              <div>
+                <label for="heightCM">Height(cm)</label>
+                <input
+                  class="heightCM"
+                  id="heightCM"
+                  type="number"
+                  placeholder="180"
+                  name="heightCM"
+                  required
+                />
+              </div>
+              <div>
+                <label for="WeightKG">Weight(kg)</label>
+                <input
+                  class="weightKG"
+                  id="WeightKG"
+                  type="number"
+                  placeholder="70"
+                  name="WeightKG"
+                  required
+                />
+              </div>
+              <div>
+                <label for="select-gender">GENDER</label>
+                <select
+                  class="gender"
+                  id="select-gender"
+                  name="select-gender"
+                  required
+                >
+                  <option value="">Please choose option:</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <!-- <input type="submit" class="btn btn-form" placeholder="Sign-up now"/> -->
+              <button type="submit" class="btn btn--form btn--create">
+                Add Person
+              </button>
+              <!-- <input type="checkbox" />
+              <input type="number" /> -->
+              <strong></strong>
+            </form>
+            <p class="bmr-result-text bmr-result-text--color">
+              Here is your BMR : <span class="bmr-result"> 18.5</span> KCAL
+            </p>
+            <p class="bmr-conclusion-text">
+              CONGRATIULATIONS! YOU ARE HEALTHY <br />
+              Maintaining a healthy weight has many short and long-term benefits
+              and can help you stay healthier as you grow older. Setting small,
+              specific goals for getting active is the quickest way to change
+              your habits and maintain a healthy weight. If you're above a
+              healthy weight, you may be at increased risk of health problems
+              including diabetes, heart disease and certain cancers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
